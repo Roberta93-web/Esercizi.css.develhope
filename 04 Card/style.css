@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Regular.ttf') format("truetype");
+    }
+html {
+    font-family: 'Roboto';
+    font-size: 20px;
+
+}    
+body {
+    background-color: white;
+    
+}
+
+
+figure.box{
+    width: 200px;
+    height: 80px;
+    padding: 100px;
+    margin: 0;
+    background-color: rgb(112, 114, 123);
+    color:rgb(222, 215, 215);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  a:visited{
+    color: rgb(21, 85, 203);
+
+  }
