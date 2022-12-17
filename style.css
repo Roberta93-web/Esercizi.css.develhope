@@ -1,72 +1,41 @@
-.grid{
-    border-radius: 5px;
-    width: 300px;
-    height: 50%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 'result result result result'
-     'operation operation operation operation' 
-     'main main main equal'
-     'main main main equal'
-     'main main main equal'
-     'main main main equal'
-    ;
-    
+body {
+  width: 60em;
+  margin: 0 auto;
 }
 
-.result{
-    background-color: darkgray;
-    grid-area: result;
-    display: grid;
-    justify-content: end;
-    align-items: center;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+section {
+  padding: 2em;
+  margin: 1em;
 }
 
-
-.operation{
-    grid-area: operation;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    align-content: space-around;
-    justify-content: space-around;
-    background-color: lightgray;
-    text-align: center;
-    border: 1px solid black;
-    font-size: 40px;
+#green {
+  background-color: #8ffda7;
 
 }
 
-.main{
-    grid-area: main ;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    align-content: space-around;
-    justify-content: space-around;
-    background-color: whitesmoke;
+#orange {
+  background-color: #ffc788;
 }
 
-.main span{
-    text-align: center;
-    border: 1px solid black;
-    font-size: 40px;
-
-}
-.equal{
-    grid-area: equal;
-    background-color: salmon;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    font-size: 25px;
-
-
+#yellow {
+  background-color: #ffff92;
 }
 
+#red {
+  background-color: #ff919c;
+}
+
+#blue {
+  background-color: #98d2ff;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: block;
+  margin: 1em;
+}
