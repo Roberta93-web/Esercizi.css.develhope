@@ -1,53 +1,26 @@
 .container {
-    display: grid;
-
-}
-
-#green {
-    background-color: #8ffda7;
-    grid-area: 1 / 1 / span 1 / span 3;
-
-}
-
-#orange {
-    background-color: #ffc788;
-    grid-area: 3 / 1 / span 2 / span 2;
-
+    display: flex;
+    justify-content: center;
 }
 
 #yellow {
-    background-color: #ffff92;
-    float: right;
-
+    order: 1;
 }
 
 #red {
-    background-color: #ff919c;
+    order: 2;
+}
 
+#green {
+    order: 3;
+}
+
+#orange {
+    order: 4;
+    flex-grow: 1;
 }
 
 #blue {
-    background-color: #98d2ff;
-    grid-area: 2 / 3 / span 3 / span 1;
+    order: 5;
 }
 
-.number {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.letter{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-ul {
-    padding: 0;
-   
-}
-
-li {
-    background-color: white;
-    padding: 1em;
-    display: block;
-    margin: 1em;
-}
