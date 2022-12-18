@@ -1,41 +1,28 @@
-body {
-  width: 60em;
-  margin: 0 auto;
+.mobile {
+    display: none;
 }
 
-section {
-  padding: 2em;
-  margin: 1em;
+.tablet {
+    display: none;
 }
 
-#green {
-  background-color: #8ffda7;
- 
-}
+@media screen and (max-width: 375px) {
+    .desktop,
+    .tablet {
+        display: none;
+    }
 
-#orange {
-  background-color: #ffc788;
-}
+    .mobile {
+        display: block;
+    }
+  }
 
-#yellow {
-  background-color: #ffff92;
-}
-
-#red {
-  background-color: #ff919c;
-}
-
-#blue {
-  background-color: #98d2ff;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  background-color: white;
-  padding: 1em;
-  display: block;
-  margin: 1em;
+@media (min-width: 375px) and (max-width: 768px) {
+    .desktop,
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: flex;
+    }
 }
