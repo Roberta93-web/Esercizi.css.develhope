@@ -1,28 +1,104 @@
-.mobile {
-    display: none;
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto-Regular.ttf') format("truetype");
 }
 
-.tablet {
-    display: none;
+html {
+  font-family: "Roboto";
+  font-size: 24px;
 }
 
-@media screen and (max-width: 375px) {
-    .desktop,
-    .tablet {
-        display: none;
-    }
+.navbar {
+  padding: 15px;
+  margin: 0px;
+  background-color: #113a4d;
+  font-size: 24px;
+  color: white;
+  top: 0;
+  left: 0;
+  text-align: left;
+  position: fixed;
+  width: 100%;
+}
 
-    .mobile {
-        display: block;
-    }
+
+#home {
+  color: white;
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul,
+li,
+a {
+  display: inline;
+  padding: 2px;
+  margin: 5px;
+  color: rgb(187, 181, 181);
+  text-decoration: none;
+}
+
+.drop-down {
+  color: rgb(187, 181, 181);
+  margin: 5px;
+
+}
+
+.disabled {
+  color: rgba(187, 181, 181, 0.168);
+  border: none;
+  background: none;
+  font-size: inherit;
+}
+
+
+.search-button {
+  float: right;
+  border: 1px solid rgb(0, 158, 79);
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 20px;
+  width: 100px;
+  font-size: inherit;
+  color: rgba(0, 158, 79);
+}
+
+.search-button:hover {
+  background-color: green;
+  color: white;
+
+}
+
+.search {
+  position: absolute;
+  top: 0;
+  right: 150px;
+  margin-top: 18px;
+  padding: 2px;
+  border-radius: 6px;
+  width: 300px;
+  font-size: inherit;
+
+}
+
+
+.hamb-menu{
+  display: none;
+ 
+
+}
+
+@media(max-width: 768px) {
+.hamb-menu {
+    font-size: 25px;
+    display: inline;
+    color: white;
   }
 
-@media (min-width: 375px) and (max-width: 768px) {
-    .desktop,
-    .mobile {
-        display: none;
-    }
-    .tablet {
-        display: flex;
-    }
+  .links {
+    display: none;
+  }
 }

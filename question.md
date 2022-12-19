@@ -1,8 +1,5 @@
-Try to replicate the layout displayed in asset/cards-desktop.jpg, cards-mobile.jpg (max-width: 375px), cards-tablet.jpg (max-width: 768px). The created page should be responsive, both for the tablet view (`&#40;max-width: 768px&#41`) and mobile view (`&#40;max-width: 375px&#41`)
+Starting from the navbar you created in the HTML exercise number 10, add the CSS properties. The Search button should have a hover effect (background green and white text). Make it responsive: starting from 768 pixel hide all the elements except "Navbar" and a hamburger menu, without fucntionality, should appear.
 
-**Suggestion:**
-
-[//]: # "Per risolvere al meglio l'esercizio, usare le Media Query."
-
-Use the Media Query rules to solve the exercise successfully.
+**Suggestion**:
+The hamburger menu has `display: none` as starting property.
 
